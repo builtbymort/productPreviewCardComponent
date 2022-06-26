@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "fraunces bold";
+  src: url("../fonts/Fraunces/static/Fraunces/Fraunces-Bold.ttf");
+}
+@font-face {
+  font-family: "montserrat medium";
+  src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "montserrat bold";
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(30deg, 38%, 92%);
+}
+
+.card {
+  display: flex;
+  width: 40%;
+  height: 60%;
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+}
+
+.panel {
+  height: 100%;
+}
+
+.left {
+  width: 52%;
+  background: url("../images/image-product-desktop.jpg");
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  border-radius: 0 10px 10px 0;
+}
+.right section {
+  display: unset;
+  height: 90%;
+  width: 80%;
+  border-radius: unset;
+}
+.right section h6 {
+  color: hsl(228deg, 12%, 48%);
+  font-weight: unset;
+  font-family: "montserrat medium";
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.right section h1 {
+  font-family: "fraunces bold";
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.right section p {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "montserrat medium";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.right section .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 2px;
+}
+.right section .price .actual {
+  color: hsl(158deg, 36%, 37%);
+  font-size: 30px;
+  font-family: "fraunces bold";
+}
+.right section .price .cancelled {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "montserrat medium";
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.right section .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "montserrat medium";
+  background: hsl(158deg, 36%, 37%);
+  border-style: none;
+  border-radius: 10px;
+}
+.right section .btn:hover {
+  cursor: pointer;
+  background: #194031;
+}
+
+@media only screen and (max-width: 376px) {
+  .card {
+    flex-wrap: wrap;
+    width: 90%;
+    height: 95%;
+  }
+
+  .panel {
+    width: 100%;
+  }
+
+  .left {
+    height: 35%;
+    background: url("../images/image-product-mobile.jpg");
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .right {
+    height: 65%;
+    border-radius: 0 0 10px 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
